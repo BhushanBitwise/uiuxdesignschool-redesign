@@ -24,9 +24,9 @@ export const Hero = ({ onOpenEnquiry }) => {
   const [activeCanvasTab, setActiveCanvasTab] = useState('ui'); // 'ui', 'wireframe', 'ai'
 
   return (
-    <section className="relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24 bg-white bg-grid-subtle">
+    <section className="relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24 bg-white bg-grid-subtle w-full max-w-full">
       {/* Ambient Radial Glowing Orbs */}
-      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[750px] h-[450px] bg-gradient-to-tr from-indigo-100/40 via-violet-100/30 to-amber-100/20 blur-3xl -z-10 pointer-events-none rounded-full" />
+      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-full max-w-[750px] h-[450px] bg-gradient-to-tr from-indigo-100/40 via-violet-100/30 to-amber-100/20 blur-3xl -z-10 pointer-events-none rounded-full" />
       <div className="absolute top-1/3 -right-24 w-80 h-80 bg-pink-100/30 blur-3xl -z-10 pointer-events-none rounded-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -119,10 +119,10 @@ export const Hero = ({ onOpenEnquiry }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.35 }}
-          className="relative rounded-2xl sm:rounded-3xl bg-slate-900/5 p-1.5 sm:p-3 border border-slate-200/90 shadow-2xl max-w-5xl mx-auto"
+          className="relative rounded-2xl sm:rounded-3xl bg-slate-900/5 p-1.5 sm:p-3 border border-slate-200/90 shadow-2xl max-w-5xl mx-auto w-full"
         >
           {/* Main Studio Frame */}
-          <div className="relative rounded-xl sm:rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-inner">
+          <div className="relative rounded-xl sm:rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-inner w-full">
             
             {/* Top Figma-Style Window Chrome Bar */}
             <div className="px-3 sm:px-4 py-2.5 sm:py-3 bg-slate-50 border-b border-slate-200/80 flex items-center justify-between gap-2 text-xs">
@@ -181,7 +181,7 @@ export const Hero = ({ onOpenEnquiry }) => {
             </div>
 
             {/* Canvas Dynamic Content Area */}
-            <div className="relative aspect-[16/9] min-h-[360px] sm:min-h-[460px] bg-slate-100/70 p-4 sm:p-8 flex items-center justify-center overflow-hidden">
+            <div className="relative aspect-auto sm:aspect-[16/9] min-h-[220px] sm:min-h-[460px] w-full max-w-full bg-slate-100/70 p-2 sm:p-8 flex items-center justify-center overflow-hidden">
               
               {/* Canvas Background Grid */}
               <div className="absolute inset-0 bg-dot-subtle pointer-events-none" />

@@ -9,7 +9,7 @@ import { Sparkles, CheckCircle2, ShieldCheck, Clock, Award } from 'lucide-react'
 
 export const CoursesPage = ({ onOpenEnquiry }) => {
   return (
-    <div className="pt-6">
+    <div className="pt-6 w-full max-w-full overflow-x-hidden">
       {/* Course Hero Banner */}
       <section className="py-14 bg-gradient-to-b from-indigo-50/60 via-white to-white text-center px-4">
         <div className="max-w-4xl mx-auto space-y-4">

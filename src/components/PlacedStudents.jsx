@@ -26,9 +26,9 @@ export const PlacedStudents = ({ onOpenEnquiry }) => {
     : placedStudents.filter(s => s.company.toLowerCase().includes(filterCompany.toLowerCase()));
 
   return (
-    <section id="placements" className="py-24 bg-gradient-to-b from-slate-50/70 via-white to-slate-50/50 border-t border-slate-100 relative">
+    <section id="placements" className="py-24 bg-gradient-to-b from-slate-50/70 via-white to-slate-50/50 border-t border-slate-100 relative overflow-hidden w-full max-w-full">
       {/* Subtle Ambient Background Gradients */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-indigo-100/30 via-emerald-100/20 to-teal-100/30 blur-3xl pointer-events-none rounded-full" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-[800px] h-[400px] bg-gradient-to-r from-indigo-100/30 via-emerald-100/20 to-teal-100/30 blur-3xl pointer-events-none rounded-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -205,13 +205,14 @@ export const PlacedStudents = ({ onOpenEnquiry }) => {
         </div>
 
         {/* CTA */}
-        <div className="mt-14 text-center">
+        <div className="mt-14 text-center px-2">
           <button
             onClick={() => onOpenEnquiry("Placements Page Consultation")}
-            className="px-8 py-4 rounded-full text-sm font-bold text-white bg-slate-950 hover:bg-indigo-600 transition-all duration-300 shadow-lg hover:shadow-indigo-200 cursor-pointer inline-flex items-center gap-2 group btn-shimmer"
+            className="max-w-full px-5 sm:px-8 py-3.5 sm:py-4 rounded-full text-xs sm:text-sm font-bold text-white bg-slate-950 hover:bg-indigo-600 transition-all duration-300 shadow-lg hover:shadow-indigo-200 cursor-pointer inline-flex items-center justify-center gap-2 group btn-shimmer text-center"
           >
-            <span>Join 3,000+ Placed Designers • Start Your Career</span>
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            <span className="sm:hidden">Join 3,000+ Placed Designers</span>
+            <span className="hidden sm:inline">Join 3,000+ Placed Designers • Start Your Career</span>
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 shrink-0" />
           </button>
         </div>
 

@@ -21,7 +21,7 @@ export const CoursesSection = ({ onOpenEnquiry }) => {
     : packages.filter(p => p.duration.includes(selectedDuration));
 
   return (
-    <section id="courses" className="py-24 bg-white relative">
+    <section id="courses" className="py-24 bg-white relative overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -82,9 +82,9 @@ export const CoursesSection = ({ onOpenEnquiry }) => {
             >
               {/* Popular Tag */}
               {pkg.popular && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-indigo-600 via-indigo-700 to-violet-700 text-white text-[10px] font-extrabold uppercase tracking-widest py-1 px-4 rounded-full shadow-md flex items-center gap-1.5">
-                  <Sparkles className="w-3 h-3 text-amber-300" />
-                  Most Popular For Career Switchers
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-indigo-600 via-indigo-700 to-violet-700 text-white text-[10px] font-extrabold uppercase tracking-wider py-1 px-3 sm:px-4 rounded-full shadow-md flex items-center gap-1.5 whitespace-nowrap max-w-[92%] truncate justify-center">
+                  <Sparkles className="w-3 h-3 text-amber-300 shrink-0" />
+                  <span>Most Popular For Career Switchers</span>
                 </div>
               )}
 
@@ -165,7 +165,7 @@ export const CoursesSection = ({ onOpenEnquiry }) => {
         </div>
 
         {/* Bottom Placement Guarantee Card */}
-        <div className="mt-16 p-8 rounded-3xl bg-slate-950 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+        <div className="mt-16 p-5 sm:p-8 rounded-3xl bg-slate-950 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl w-full max-w-full">
           <div className="flex items-center gap-5 text-center md:text-left">
             <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center shrink-0">
               <ShieldCheck className="w-8 h-8 text-amber-400" />
@@ -179,7 +179,7 @@ export const CoursesSection = ({ onOpenEnquiry }) => {
           </div>
           <button
             onClick={() => onOpenEnquiry("Counselor Consultation")}
-            className="px-7 py-3.5 rounded-full text-xs font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 transition-all shadow-md shrink-0 cursor-pointer"
+            className="w-full sm:w-auto px-7 py-3.5 rounded-full text-xs font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 transition-all shadow-md shrink-0 cursor-pointer text-center"
           >
             Schedule Free 1-on-1 Counseling
           </button>

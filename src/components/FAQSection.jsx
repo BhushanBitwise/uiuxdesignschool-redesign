@@ -8,7 +8,7 @@ export const FAQSection = ({ onOpenEnquiry }) => {
   const [openFaq, setOpenFaq] = useState(0);
 
   return (
-    <section id="faq" className="py-20 bg-slate-50/70 border-t border-slate-100">
+    <section id="faq" className="py-20 bg-slate-50/70 border-t border-slate-100 relative overflow-hidden w-full max-w-full">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

@@ -20,7 +20,7 @@ export const BranchesSection = ({ onOpenEnquiry }) => {
   const [selectedBranch, setSelectedBranch] = useState(branches[0]);
 
   return (
-    <section id="branches" className="py-24 bg-white relative">
+    <section id="branches" className="py-24 bg-white relative overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -136,7 +136,7 @@ export const BranchesSection = ({ onOpenEnquiry }) => {
             </div>
 
             {/* Global Cohort Guarantee Strip */}
-            <div className="rounded-2xl bg-gradient-to-r from-indigo-900 via-slate-900 to-indigo-950 p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+            <div className="rounded-2xl bg-gradient-to-r from-indigo-900 via-slate-900 to-indigo-950 p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl w-full max-w-full">
               <div className="space-y-1.5 text-center md:text-left">
                 <div className="flex items-center justify-center md:justify-start gap-2 text-xs font-bold uppercase tracking-wider text-indigo-300">
                   <Sparkles className="w-4 h-4 text-amber-400" />
@@ -152,7 +152,7 @@ export const BranchesSection = ({ onOpenEnquiry }) => {
 
               <button
                 onClick={() => onOpenEnquiry("International Batch Schedule & Fees")}
-                className="px-6 py-3.5 rounded-full bg-white hover:bg-indigo-50 text-slate-950 text-xs sm:text-sm font-bold transition-all shadow-md shrink-0 cursor-pointer"
+                className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white hover:bg-indigo-50 text-slate-950 text-xs sm:text-sm font-bold transition-all shadow-md shrink-0 cursor-pointer text-center"
               >
                 Download Global Batch Schedule
               </button>

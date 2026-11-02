@@ -41,7 +41,7 @@ export const VerifyPage = () => {
   };
 
   return (
-    <div className="pt-6">
+    <div className="pt-6 w-full max-w-full overflow-x-hidden">
       {/* Verify Hero Header */}
       <section className="py-14 bg-gradient-to-b from-indigo-50/50 via-white to-white text-center px-4">
         <div className="max-w-4xl mx-auto space-y-4">

@@ -6,7 +6,7 @@ import MotionButton from './motion/MotionButton';
 
 export const CertificationsSection = ({ onOpenEnquiry }) => {
   return (
-    <section id="certification" className="py-20 bg-white relative">
+    <section id="certification" className="py-20 bg-white relative overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

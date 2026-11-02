@@ -51,7 +51,7 @@ export const ReviewsSection = ({ onOpenEnquiry }) => {
   ];
 
   return (
-    <section id="reviews" className="py-20 bg-slate-50/70 border-t border-slate-100 relative">
+    <section id="reviews" className="py-20 bg-slate-50/70 border-t border-slate-100 relative overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

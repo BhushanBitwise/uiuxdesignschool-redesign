@@ -24,7 +24,7 @@ export const IITBombaySection = ({ onOpenEnquiry }) => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-r from-violet-900 via-indigo-900 to-slate-900 text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-r from-violet-900 via-indigo-900 to-slate-900 text-white relative overflow-hidden w-full max-w-full">
       
       {/* Background ambient lighting */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-violet-600/20 blur-3xl rounded-full pointer-events-none" />

@@ -9,7 +9,7 @@ export const RecruiterMarquee = () => {
   const row2 = [...recruiterLogos.slice(half), ...recruiterLogos.slice(half)];
 
   return (
-    <section className="py-14 bg-gradient-to-b from-white via-slate-50/60 to-white border-y border-slate-100 overflow-hidden relative">
+    <section className="py-14 bg-gradient-to-b from-white via-slate-50/60 to-white border-y border-slate-100 overflow-hidden relative w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 text-center mb-9">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100/80 text-indigo-700 text-[11px] font-bold uppercase tracking-wider mb-2.5">
           <Briefcase className="w-3.5 h-3.5 text-indigo-600" />
@@ -41,7 +41,7 @@ export const RecruiterMarquee = () => {
       </div>
 
       {/* Row 1: Leftward moving marquee with direct original colorful logos */}
-      <div className="relative w-full overflow-hidden mask-[linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] mb-3">
+      <div className="relative w-full max-w-full overflow-hidden mask-[linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] mb-3">
         <div className="animate-marquee-left flex items-center gap-4 sm:gap-6 py-1.5">
           {row1.map((item, idx) => (
             <div
@@ -61,7 +61,7 @@ export const RecruiterMarquee = () => {
       </div>
 
       {/* Row 2: Rightward moving marquee with direct original colorful logos */}
-      <div className="relative w-full overflow-hidden mask-[linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
+      <div className="relative w-full max-w-full overflow-hidden mask-[linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
         <div className="animate-marquee-right flex items-center gap-4 sm:gap-6 py-1.5">
           {row2.map((item, idx) => (
             <div

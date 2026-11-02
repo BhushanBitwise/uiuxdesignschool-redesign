@@ -15,7 +15,7 @@ import FAQSection from '../components/FAQSection';
 
 export const HomePage = ({ onOpenEnquiry }) => {
   return (
-    <main>
+    <main className="w-full max-w-full overflow-x-hidden">
       <Hero onOpenEnquiry={onOpenEnquiry} />
       <RecruiterMarquee />
       <CoursesSection onOpenEnquiry={onOpenEnquiry} />

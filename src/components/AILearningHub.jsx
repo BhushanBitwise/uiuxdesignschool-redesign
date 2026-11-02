@@ -66,7 +66,7 @@ export const AILearningHub = ({ onOpenEnquiry }) => {
   };
 
   return (
-    <section id="ai-hub" className="py-20 bg-gradient-to-b from-indigo-50/50 via-white to-indigo-50/30 relative overflow-hidden">
+    <section id="ai-hub" className="py-20 bg-gradient-to-b from-indigo-50/50 via-white to-indigo-50/30 relative overflow-hidden w-full max-w-full">
       
       {/* Background accents */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-indigo-200/20 blur-3xl rounded-full -translate-y-1/2 pointer-events-none" />

@@ -16,7 +16,7 @@ export const ClientProjects = ({ onOpenEnquiry }) => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section id="projects" className="py-24 bg-white relative">
+    <section id="projects" className="py-24 bg-white relative overflow-hidden w-full max-w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

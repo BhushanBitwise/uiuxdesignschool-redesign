@@ -30,12 +30,12 @@ export function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-white text-slate-800 antialiased font-sans selection:bg-indigo-500 selection:text-white">
+      <div className="min-h-screen flex flex-col bg-white text-slate-800 antialiased font-sans selection:bg-indigo-500 selection:text-white w-full max-w-full overflow-x-hidden">
         {/* Sticky Glassmorphism Header */}
         <Navbar onOpenEnquiry={handleOpenEnquiry} />
 
         {/* Dynamic Route Pages */}
-        <div className="flex-1">
+        <div className="flex-1 w-full max-w-full min-w-0 overflow-x-hidden">
           <Routes>
             <Route path="/" element={<HomePage onOpenEnquiry={handleOpenEnquiry} />} />
             <Route path="/courses" element={<CoursesPage onOpenEnquiry={handleOpenEnquiry} />} />
