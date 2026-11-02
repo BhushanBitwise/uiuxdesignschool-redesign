@@ -39,10 +39,10 @@ export const CoursesSection = ({ onOpenEnquiry }) => {
           </p>
 
           {/* Filter Pills */}
-          <div className="mt-8 inline-flex items-center p-1.5 rounded-full bg-slate-100 border border-slate-200/80">
+          <div className="mt-8 flex flex-wrap items-center justify-center p-1 sm:p-1.5 rounded-2xl sm:rounded-full bg-slate-100 border border-slate-200/80 max-w-full gap-1">
             <button
               onClick={() => setSelectedDuration('all')}
-              className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
+              className={`px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all cursor-pointer ${
                 selectedDuration === 'all' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600 hover:text-slate-900'
               }`}
             >
@@ -50,7 +50,7 @@ export const CoursesSection = ({ onOpenEnquiry }) => {
             </button>
             <button
               onClick={() => setSelectedDuration('3 - 4')}
-              className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
+              className={`px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all cursor-pointer ${
                 selectedDuration === '3 - 4' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600 hover:text-slate-900'
               }`}
             >
@@ -58,7 +58,7 @@ export const CoursesSection = ({ onOpenEnquiry }) => {
             </button>
             <button
               onClick={() => setSelectedDuration('6 - 7')}
-              className={`px-5 py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
+              className={`px-3.5 sm:px-5 py-1.5 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all cursor-pointer ${
                 selectedDuration === '6 - 7' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600 hover:text-slate-900'
               }`}
             >

@@ -39,23 +39,23 @@ export const Navbar = ({ onOpenEnquiry }) => {
   return (
     <>
       {/* Floating Island Header Container */}
-      <header className="fixed top-3 sm:top-5 left-0 right-0 z-50 flex justify-center px-3 sm:px-6 pointer-events-none">
+      <header className="fixed top-2.5 sm:top-5 left-0 right-0 z-50 flex justify-center px-2.5 sm:px-6 pointer-events-none">
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className={`pointer-events-auto w-full max-w-6xl rounded-full transition-all duration-300 ${
             scrolled 
-              ? 'bg-white/85 backdrop-blur-xl border border-slate-200/90 shadow-[0_12px_40px_rgba(0,0,0,0.08)] py-2.5 px-4 sm:px-6' 
-              : 'bg-white/95 backdrop-blur-lg border border-slate-200/80 shadow-[0_8px_30px_rgba(0,0,0,0.04)] py-3 px-4 sm:px-6'
-          } flex items-center justify-between gap-4`}
+              ? 'bg-white/90 backdrop-blur-xl border border-slate-200/90 shadow-[0_12px_40px_rgba(0,0,0,0.08)] py-2 sm:py-2.5 px-3 sm:px-6' 
+              : 'bg-white/95 backdrop-blur-lg border border-slate-200/80 shadow-[0_8px_30px_rgba(0,0,0,0.04)] py-2.5 sm:py-3 px-3 sm:px-6'
+          } flex items-center justify-between gap-2 sm:gap-4`}
         >
           {/* Brand Logo - Original from uiuxdesignschool.in */}
           <Link to="/" className="flex items-center gap-2 group select-none shrink-0" title="UI UX Design School Home">
             <img 
               src="/images/logo-dark.png" 
               alt="UI UX Design School" 
-              className="h-5 sm:h-6 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+              className="h-4.5 sm:h-6 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
               loading="eager"
             />
 
@@ -198,7 +198,7 @@ export const Navbar = ({ onOpenEnquiry }) => {
           </nav>
 
           {/* Right Action Buttons */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
             <button
               onClick={() => onOpenEnquiry("Brochure Download")}
               className="hidden lg:flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 hover:text-slate-950 hover:bg-slate-100 transition-colors cursor-pointer"
@@ -209,16 +209,17 @@ export const Navbar = ({ onOpenEnquiry }) => {
 
             <button
               onClick={() => onOpenEnquiry("Navbar Apply Free Demo")}
-              className="relative px-4 sm:px-5 py-2 rounded-full text-xs font-bold text-white bg-slate-900 hover:bg-indigo-600 transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer flex items-center gap-1.5 group select-none btn-shimmer"
+              className="relative px-3 sm:px-5 py-2 rounded-full text-xs font-bold text-white bg-slate-900 hover:bg-indigo-600 transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer flex items-center gap-1.5 group select-none whitespace-nowrap shrink-0 btn-shimmer"
             >
-              <span>Book Free Demo</span>
-              <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+              <span className="hidden sm:inline">Book Free Demo</span>
+              <span className="sm:hidden">Book Demo</span>
+              <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 shrink-0" />
             </button>
 
             {/* Mobile Menu Toggle Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-1.5 rounded-full text-slate-700 hover:bg-slate-100 transition-colors cursor-pointer"
+              className="md:hidden p-1.5 rounded-full text-slate-700 hover:bg-slate-100 transition-colors cursor-pointer shrink-0"
               aria-label="Toggle Navigation Menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

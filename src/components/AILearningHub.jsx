@@ -92,7 +92,7 @@ export const AILearningHub = ({ onOpenEnquiry }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Left Column: 50+ Tools Directory with Filters */}
-          <div className="lg:col-span-7 bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md">
+          <div className="lg:col-span-7 bg-white p-4 sm:p-7 rounded-3xl border border-slate-200/80 shadow-md">
             
             {/* Search and Categories */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 mb-6">
@@ -171,7 +171,7 @@ export const AILearningHub = ({ onOpenEnquiry }) => {
           </div>
 
           {/* Right Column: Interactive AI Design Advisor Chatbot Widget */}
-          <div className="lg:col-span-5 bg-white rounded-3xl border border-slate-200/80 shadow-md p-6 flex flex-col h-[560px]">
+          <div className="lg:col-span-5 bg-white rounded-3xl border border-slate-200/80 shadow-md p-4 sm:p-6 flex flex-col h-[520px] sm:h-[560px]">
             
             {/* Chatbot Top Header */}
             <div className="flex items-center gap-3 pb-4 border-b border-slate-100">

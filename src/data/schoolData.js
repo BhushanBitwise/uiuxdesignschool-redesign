@@ -323,92 +323,121 @@ export const aiToolsList = [
 
 export const placedStudents = [
   {
-    name: "Sachin Jagdale",
-    company: "Cognizant",
-    role: "UI/UX Designer",
-    package: "8.2 LPA",
-    image: "/downloaded/pro1-6598ed834d8c9.webp",
-    quote: "UI UX Training in Pune was excellent with good interaction. Anuj Sir is enthusiastic and practical."
-  },
-  {
-    name: "Pooja Deshmukh",
-    company: "Capgemini",
-    role: "Product Designer",
-    package: "9.5 LPA",
-    image: "/downloaded/pro2-6598ed83b5cc2.webp",
-    quote: "Got placed within 3 weeks of finishing my portfolio on Behance. Amazing mentorship!"
-  },
-  {
-    name: "Sandip Randive",
-    company: "Infosys",
-    role: "UX Researcher",
-    package: "7.8 LPA",
-    image: "/downloaded/pro3-6598ed85d0566.webp",
-    quote: "Manoj sir's focus on basics helped me understand usability principles so clearly."
-  },
-  {
-    name: "Snehal K.",
-    company: "Dell Technologies",
-    role: "Interaction Designer",
-    package: "10.2 LPA",
-    image: "/downloaded/pro4-6598ed8646d90.webp",
-    quote: "The live client project on FinTech was the deciding factor in my interview rounds."
-  },
-  {
-    name: "Likhesh Mahajan",
-    company: "LTI Mindtree",
-    role: "UI Engineer",
-    package: "8.5 LPA",
-    image: "/downloaded/pro6-6598ed8816e35.webp",
-    quote: "100% placement commitment fulfilled! Really grateful to the entire career team."
-  },
-  {
-    name: "Arun Singh",
+    name: "Shweta S.",
     company: "Wipro",
+    companyLogo: "/downloaded/wipro.jpg",
     role: "UI/UX Designer",
-    package: "7.5 LPA",
-    image: "/downloaded/pro8-6598ed8840cd7.webp",
-    quote: "Hands-on Figma training with auto-layout and component sets gave me huge confidence."
+    package: "11.45 LPA",
+    hike: "+210% Hike",
+    prevBackground: "B.Com Commerce",
+    image: "/images/students/real/shweta.png",
+    skills: ["Figma", "Design Systems", "Auto Layout"],
+    batch: "Pune Flagship Studio",
+    quote: "Coming from a non-design commerce background, the practical Figma & UX psychology mentorship helped me crack Wipro with 11.45 LPA!"
   },
   {
-    name: "Kamal Prasad",
+    name: "Bhupendra N.",
+    company: "Cognizant",
+    companyLogo: "/downloaded/cognizant.svg",
+    role: "Product Designer",
+    package: "13.0 LPA",
+    hike: "+240% Hike",
+    prevBackground: "Mechanical Engineering",
+    image: "/images/students/real/bhupendra.jpg",
+    skills: ["Design Thinking", "Figma", "Enterprise UX"],
+    batch: "Pune Flagship Studio",
+    quote: "Switched from core mechanical to UI/UX product design. Live client projects and portfolio audits were the deciding factor in my interview."
+  },
+  {
+    name: "Nikita M.",
+    company: "Capgemini",
+    companyLogo: "/downloaded/cabgemini.png",
+    role: "Product Designer",
+    package: "11.0 LPA",
+    hike: "+195% Hike",
+    prevBackground: "Architecture B.Arch",
+    image: "/images/students/real/nikita.jpg",
+    skills: ["Mobile UX", "Design Systems", "Figma"],
+    batch: "Pune Flagship Studio",
+    quote: "Got placed within 3 weeks of finishing my Behance portfolio. The faculty's hands-on case study feedback was top notch!"
+  },
+  {
+    name: "Chetan J.",
+    company: "Infosys",
+    companyLogo: "/downloaded/infi.png",
+    role: "UX Researcher",
+    package: "10.5 LPA",
+    hike: "+175% Hike",
+    prevBackground: "BCA Non-Design",
+    image: "/images/students/real/chetan.jpg",
+    skills: ["User Interviews", "Usability Testing", "Wireframes"],
+    batch: "Corporate Placement Track",
+    quote: "Manoj sir's focus on user empathy and heuristic evaluation helped me crack the Infosys design assessment with ease."
+  },
+  {
+    name: "Kunal R.",
+    company: "Dell Technologies",
+    companyLogo: "/downloaded/dell.png",
+    role: "UI Specialist",
+    package: "10.5 LPA",
+    hike: "+180% Hike",
+    prevBackground: "Civil Engineering",
+    image: "/images/students/real/kunal.jpg",
+    skills: ["Auto-Layout", "Design Tokens", "Responsive Web"],
+    batch: "Weekend Masterclass",
+    quote: "Hands-on Figma training with auto-layout and design tokens gave me huge confidence during my technical design challenge."
+  },
+  {
+    name: "Noman A.",
+    company: "LTI Mindtree",
+    companyLogo: "/downloaded/lti.png",
+    role: "Interaction Designer",
+    package: "10.0 LPA",
+    hike: "+165% Hike",
+    prevBackground: "BBA Marketing",
+    image: "/images/students/real/noman.png",
+    skills: ["Micro-interactions", "Framer", "Prototyping"],
+    batch: "Pune Studio Cohort",
+    quote: "100% placement commitment truly delivered. Mock interviews with industry design leads prepared me for every round."
+  },
+  {
+    name: "Prerana N.",
+    company: "IBM",
+    companyLogo: "/downloaded/ibm.png",
+    role: "UX Architect",
+    package: "9.75 LPA",
+    hike: "+160% Hike",
+    prevBackground: "Interior Design",
+    image: "/images/students/real/prerana.png",
+    skills: ["Information Architecture", "Enterprise UX", "Miro"],
+    batch: "Elite Track (IIT Immersion)",
+    quote: "IIT Bombay Techfest visit opened my eyes to cutting-edge innovation. The complex enterprise SaaS case study landed me an offer from IBM."
+  },
+  {
+    name: "Sachin J.",
     company: "Oracle",
+    companyLogo: "/downloaded/oracle.png",
     role: "Visual Designer",
     package: "9.0 LPA",
-    image: "/downloaded/pro9-6598ed89254e0.webp",
-    quote: "The best UI/UX course in Pune without any doubt. Practical assignments and mock interviews."
+    hike: "+190% Hike",
+    prevBackground: "Graphic Design",
+    image: "/images/students/real/gallery1.jpeg",
+    skills: ["Visual Hierarchy", "Design Systems", "WCAG 2.2"],
+    batch: "Flagship Innovation Studio",
+    quote: "Transitioned from traditional graphic design to enterprise product design. Practical assignments and mock interviews made it seamless."
   },
   {
-    name: "Jay Sharma",
-    company: "IBM",
-    role: "UX Architect",
-    package: "11.0 LPA",
-    image: "/downloaded/pro10-6598ed8a1a8d4.webp",
-    quote: "IIT Bombay Techfest visit opened my eyes to cutting edge innovation in tech and design."
-  },
-  {
-    name: "Rakesh Sawant",
+    name: "Pooja D.",
     company: "PayPal Partner",
+    companyLogo: "/downloaded/paypal.png",
     role: "Fintech UX Designer",
-    package: "8.0 LPA",
-    image: "/downloaded/pro11-6598ed8a208f5.webp",
-    quote: "Working on real healthcare and fintech projects taught me what companies really look for."
-  },
-  {
-    name: "Sameer Ahuja",
-    company: "Amazon Vendor",
-    role: "Design Lead",
-    package: "12.5 LPA",
-    image: "/downloaded/pro12-6598ed8b08cb0.webp",
-    quote: "The 1-on-1 mentoring in the Elite track transformed how I approach complex enterprise problems."
-  },
-  {
-    name: "Marshal Joseph",
-    company: "Tech Mahindra",
-    role: "UI Specialist",
-    package: "8.4 LPA",
-    image: "/downloaded/pro13-6598ed8b1241e.webp",
-    quote: "Every concept was broken down with real apps like Swiggy, Uber, and CRED."
+    package: "9.5 LPA",
+    hike: "+185% Hike",
+    prevBackground: "Banking Operations",
+    image: "/images/students/real/gallery2.jpeg",
+    skills: ["FinTech Flows", "Security UX", "Component Sets"],
+    batch: "Corporate Placement Track",
+    quote: "Working on real fintech checkout and payment security flows helped me turn my banking background into a specialized UX superpower."
   }
 ];
 

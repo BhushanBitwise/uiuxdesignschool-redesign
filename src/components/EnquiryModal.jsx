@@ -65,7 +65,7 @@ export const EnquiryModal = ({ isOpen, onClose, initialContext = "General Admiss
         exit={{ opacity: 0, scale: 0.95, y: 15 }}
         transition={{ duration: 0.22 }}
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-xl bg-white rounded-3xl overflow-hidden shadow-2xl border border-slate-100 my-8 p-6 sm:p-8"
+        className="relative w-full max-w-xl bg-white rounded-3xl overflow-hidden shadow-2xl border border-slate-100 my-8 p-5 sm:p-8"
       >
         {/* Close Button */}
         <button

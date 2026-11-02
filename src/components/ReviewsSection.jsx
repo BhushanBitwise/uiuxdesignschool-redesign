@@ -68,15 +68,15 @@ export const ReviewsSection = ({ onOpenEnquiry }) => {
           </p>
 
           {/* Aggregate Rating Pill */}
-          <div className="mt-6 inline-flex items-center gap-3 p-2.5 px-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
-            <img src="/downloaded/google.svg" alt="Google Reviews" className="h-5 w-auto" />
+          <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 p-2 sm:p-2.5 px-4 sm:px-5 rounded-2xl bg-white border border-slate-200 shadow-xs max-w-full">
+            <img src="/downloaded/google.svg" alt="Google Reviews" className="h-4.5 sm:h-5 w-auto" />
             <div className="flex text-amber-400">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-current" />
+                <Star key={i} className="w-3.5 sm:w-4 h-3.5 sm:h-4 fill-current" />
               ))}
             </div>
-            <span className="text-sm font-extrabold text-slate-900">4.9 Star Rating</span>
-            <span className="text-xs text-slate-500 font-medium">({schoolInfo.reviewsCount} Reviews)</span>
+            <span className="text-xs sm:text-sm font-extrabold text-slate-900">4.9 Star Rating</span>
+            <span className="text-[11px] sm:text-xs text-slate-500 font-medium">({schoolInfo.reviewsCount} Reviews)</span>
           </div>
         </div>
 

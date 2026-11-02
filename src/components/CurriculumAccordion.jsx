@@ -54,10 +54,10 @@ export const CurriculumAccordion = ({ onOpenEnquiry }) => {
                 {/* Header */}
                 <button
                   onClick={() => toggleAccordion(idx)}
-                  className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer select-none"
+                  className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left gap-3 sm:gap-4 cursor-pointer select-none"
                   aria-expanded={isOpen}
                 >
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-3 sm:gap-4 min-w-0">
                     <span className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm shrink-0 transition-colors ${
                       isOpen ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-700'
                     }`}>
@@ -95,8 +95,8 @@ export const CurriculumAccordion = ({ onOpenEnquiry }) => {
                       transition={{ duration: 0.28 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 pb-6 pt-2 border-t border-slate-100">
-                        <p className="text-sm text-slate-600 mb-4 font-normal leading-relaxed">
+                      <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 border-t border-slate-100">
+                        <p className="text-xs sm:text-sm text-slate-600 mb-4 font-normal leading-relaxed">
                           {module.description}
                         </p>
 
@@ -118,20 +118,22 @@ export const CurriculumAccordion = ({ onOpenEnquiry }) => {
         </div>
 
         {/* Brochure CTA Box */}
-        <div className="mt-12 text-center bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="text-left">
-            <h4 className="text-xl font-bold text-slate-900">Want the Complete 45-Page Course Handbook?</h4>
-            <p className="text-sm text-slate-500 mt-1">
+        <div className="mt-12 text-center sm:text-left bg-white p-5 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="text-center sm:text-left">
+            <h4 className="text-lg sm:text-xl font-bold text-slate-900">Want the Complete 45-Page Course Handbook?</h4>
+            <p className="text-xs sm:text-sm text-slate-500 mt-1">
               Includes comprehensive lecture schedules, software licensing details, and capstone criteria.
             </p>
           </div>
-          <MotionButton
-            variant="primary"
-            size="md"
-            onClick={() => onOpenEnquiry("Full Handbook Download")}
-          >
-            Download Curriculum PDF
-          </MotionButton>
+          <div className="w-full sm:w-auto shrink-0">
+            <MotionButton
+              variant="primary"
+              size="md"
+              onClick={() => onOpenEnquiry("Full Handbook Download")}
+            >
+              Download Curriculum PDF
+            </MotionButton>
+          </div>
         </div>
 
       </div>

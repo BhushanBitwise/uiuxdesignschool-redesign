@@ -41,10 +41,10 @@ export const FAQSection = ({ onOpenEnquiry }) => {
               >
                 <button
                   onClick={() => setOpenFaq(isOpen ? -1 : i)}
-                  className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer"
+                  className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left gap-3 sm:gap-4 cursor-pointer"
                   aria-expanded={isOpen}
                 >
-                  <h4 className="text-base font-bold text-slate-900 leading-snug">
+                  <h4 className="text-sm sm:text-base font-bold text-slate-900 leading-snug">
                     {faq.question}
                   </h4>
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 text-slate-500 transition-transform duration-200 ${
@@ -63,7 +63,7 @@ export const FAQSection = ({ onOpenEnquiry }) => {
                       transition={{ duration: 0.2 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                      <div className="px-4 sm:px-6 pb-4 sm:pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
                         {faq.answer}
                       </div>
                     </motion.div>
@@ -75,18 +75,20 @@ export const FAQSection = ({ onOpenEnquiry }) => {
         </div>
 
         {/* Still Have Questions Box */}
-        <div className="mt-12 text-center p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-left">
-            <h5 className="font-bold text-slate-900">Have a specific question not covered here?</h5>
+        <div className="mt-12 text-center sm:text-left p-4 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="text-center sm:text-left">
+            <h5 className="font-bold text-slate-900 text-sm sm:text-base">Have a specific question not covered here?</h5>
             <p className="text-xs text-slate-500 mt-0.5">Connect with our senior admission counselors directly.</p>
           </div>
-          <MotionButton
-            size="sm"
-            variant="primary"
-            onClick={() => onOpenEnquiry("FAQ Unanswered Query")}
-          >
-            Speak With Counselor
-          </MotionButton>
+          <div className="w-full sm:w-auto shrink-0">
+            <MotionButton
+              size="sm"
+              variant="primary"
+              onClick={() => onOpenEnquiry("FAQ Unanswered Query")}
+            >
+              Speak With Counselor
+            </MotionButton>
+          </div>
         </div>
 
       </div>

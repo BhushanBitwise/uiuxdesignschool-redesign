@@ -42,29 +42,31 @@ export const BranchesSection = ({ onOpenEnquiry }) => {
           </p>
 
           {/* Tab Switcher: Global Cohorts vs India Offline Studios */}
-          <div className="mt-8 inline-flex p-1.5 rounded-full bg-slate-100 border border-slate-200/90 shadow-inner">
+          <div className="mt-8 flex flex-col sm:inline-flex sm:flex-row p-1 sm:p-1.5 rounded-2xl sm:rounded-full bg-slate-100 border border-slate-200/90 shadow-inner gap-1 max-w-full">
             <button
               onClick={() => setActiveTab('global')}
-              className={`px-5 sm:px-7 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all flex items-center gap-2 cursor-pointer ${
+              className={`px-4 sm:px-7 py-2.5 rounded-xl sm:rounded-full text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
                 activeTab === 'global'
                   ? 'bg-slate-900 text-white shadow-md'
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              <Globe2 className="w-4 h-4 text-emerald-400" />
-              <span>International Cohorts (US, UK, DE, SG)</span>
+              <Globe2 className="w-4 h-4 text-emerald-400 shrink-0" />
+              <span className="sm:hidden">International Cohorts</span>
+              <span className="hidden sm:inline">International Cohorts (US, UK, DE, SG)</span>
             </button>
 
             <button
               onClick={() => setActiveTab('india')}
-              className={`px-5 sm:px-7 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all flex items-center gap-2 cursor-pointer ${
+              className={`px-4 sm:px-7 py-2.5 rounded-xl sm:rounded-full text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
                 activeTab === 'india'
                   ? 'bg-slate-900 text-white shadow-md'
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              <Building className="w-4 h-4 text-indigo-400" />
-              <span>India Design Studios (8 Cities)</span>
+              <Building className="w-4 h-4 text-indigo-400 shrink-0" />
+              <span className="sm:hidden">India Studios (8 Cities)</span>
+              <span className="hidden sm:inline">India Design Studios (8 Cities)</span>
             </button>
           </div>
         </div>
@@ -214,10 +216,10 @@ export const BranchesSection = ({ onOpenEnquiry }) => {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap items-center gap-4">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
                   <a
                     href={`tel:${selectedBranch.phone}`}
-                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-semibold transition-colors shadow-xs"
                   >
                     <Phone className="w-4 h-4" />
                     <span>Call Center: {selectedBranch.phone}</span>
@@ -225,7 +227,7 @@ export const BranchesSection = ({ onOpenEnquiry }) => {
 
                   <button
                     onClick={() => onOpenEnquiry(`Visit ${selectedBranch.city} Center`)}
-                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
                   >
                     <Navigation className="w-4 h-4 text-indigo-600" />
                     <span>Schedule Campus Walkthrough</span>

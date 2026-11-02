@@ -67,7 +67,7 @@ export const ClientProjects = ({ onOpenEnquiry }) => {
               </div>
 
               {/* Card Meta Content */}
-              <div className="p-7">
+              <div className="p-5 sm:p-7">
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <span className="text-xs font-bold px-3 py-1 rounded-full bg-indigo-50 text-indigo-700">
                     {project.category}
